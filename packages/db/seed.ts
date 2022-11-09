@@ -13,7 +13,19 @@ async function main() {
       name: "Admin",
     },
   });
-  console.log({ admin });
+  const posts = await prisma.post.createMany({
+    data: [
+      {
+        title: "Hello World",
+        content: "This is my first post!",
+      },
+      {
+        title: "Second Post",
+        content: "This is my second post!",
+      },
+    ],
+  });
+  console.log({ admin, posts });
 }
 
 main()
