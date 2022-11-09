@@ -1,0 +1,28 @@
+{
+  "name": "create-t3-turbo",
+  "private": true,
+  "packageManager": "pnpm@7.13.0",
+  "scripts": {
+    "db-generate": "turbo db-generate",
+    "db-push": "turbo db-push",
+    "db-seed": "turbo db-seed",
+    "build": "turbo build",
+    "dev": "turbo dev --parallel",
+    "clean:workspaces": "turbo clean",
+    "clean": "rimraf node_modules .turbo .vercel",
+    "lint": "turbo lint && manypkg check",
+    "fix": "manypkg fix",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "@acme/tailwind-config": "*",
+    "@manypkg/cli": "^0.19.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.1.8",
+    "turbo": "^1.5.5"
+  }
+}
