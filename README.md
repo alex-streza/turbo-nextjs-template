@@ -13,11 +13,6 @@ It uses [Turborepo](https://turborepo.org/) and contains:
 .vscode
   └─ Recommended extensions and settings for VSCode users
 apps
-  ├─ admin
-  |   ├─ React 18
-  |   ├─ TailwindCSS
-  |   ├─ E2E Typesafe API Server & Client
-  |   └─ next-auth
   └─ web
       ├─ React 18
       ├─ TailwindCSS
@@ -27,12 +22,8 @@ packages
  |   └─ tRPC v10 router definition
  ├─ auth
  |   └─ authentication using next-auth
- ├─ eslint-config-custom
- |   └─ shared custom eslint config
  ├─ tailwind
  |   └─ base tailwind config file
- ├─ tsconfig
- |   └─ shared tsconfig files
  ├─ ui
  |   └─ shared ui library
  └─ db
